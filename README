@@ -26,6 +26,23 @@ and, using Brown Universities FreeCite API (http://freecite.library.brown.edu/),
 parse their citation and redirect them to there
 libraries link resolver
 
+usage
+-----
+CiteBox is designed to be easily added to any website. The only dependency is JQuery
 
+All that is necessary is to include the following:
+
+  <link rel="stylesheet" type="text/css" href="http://<citeboxhost>/css/citebox.css"></link>
+  <script type="text/javascript" src="http://<citeboxhost>/citebox/<citeboxhost>/<baseLinkResolverURL"></script>  
+
+Replacing '<citeboxhost>' with the host name of where-ever citebox is running
+and '<baseLinkResolverURL>' with the base URL of your link resolver.
+
+Then call: 
+  CiteBox.attach($(<myElement>));
+where '<myElement>' is what ever element you want CiteBox to live in.
+
+You can easily customize the default styling of CiteBox by simply
+replacing the link to 'citebox.css' with your own custom css
 
 

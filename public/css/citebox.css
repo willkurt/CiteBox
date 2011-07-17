@@ -1,8 +1,6 @@
-body {
+.citebox{
     font: 300 100.01% "Helvetica Neue",Helvetica,"Arial Unicode MS",Arial,sans-serif;
 }
-
-
 textarea.citebox{
     width:280px;
     height:180px;
@@ -13,7 +11,7 @@ textarea.citebox{
 
 }
 
-.citebox_buttons{
+div.citebox_buttons{
     margin-top:-12px;
 }
 .citebox_button {
