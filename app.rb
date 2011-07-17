@@ -9,11 +9,14 @@ get '/' do
 end
 
 #all the necessary config data is passed throught the url
-get '/citationtool/:host/:url' do 
+get '/citebox/:host/:url' do 
   content_type 'text/javascript'
   @host = params[:host]
   @url = params[:url]
-  erb :citationtool
+  erb :citebox
 end
 
 
+post '/lookup' do
+  redirect 'http://google.com'
+end

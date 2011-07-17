@@ -1,0 +1,36 @@
+
+CiteBox = {}
+CiteBox.urlBase = "<%= @url %>";
+CiteBox.hostName = "<%= @host %>";
+
+CiteBox.attach = function(jqueryEl){
+    jqueryEl.append(
+		CiteBox.widgetCode());
+    $('#citebox_submit').bind('click',function(e){
+	e.preventDefault();
+        $("#citebox_widget_form").submit();
+    });
+
+   $('#citebox_clear').bind('click',function(e){
+   	e.preventDefault();
+	var defaultText = '';
+	$("#citation_text").val(defaultText);
+    });
+}
+    
+
+//I know I could just go ahead and
+//use jquery templates, but I don't want to have
+//to include all that code in this widget    
+CiteBox.widgetCode = function(){
+    var code = ["<div id='citebox_widget_main'>",
+		"<form id='citebox_widget_form' method='post' action='http://",
+		CiteBox.hostName+"/lookup'>",
+		"<input type='hidden' name='open_url_base'",
+		" value ='"+CiteBox.urlBase+"'  id='open_url_base'/>",
+		"<textarea id='citation_text' name='citation_text' /></form>",
+		"<a id='citebox_submit' href='#'>[submit]</a>",
+		"<a  id='citebox_clear'  href='#'>[clear]</a>"]
+    return code.join('\n');
+}
+
