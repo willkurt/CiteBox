@@ -16,7 +16,14 @@ get '/citebox/:host/:url' do
   erb :citebox
 end
 
-
 post '/lookup' do
-  redirect 'http://google.com'
+  puts "starting"
+  puts "data is #{params[:citation_text]}"
+  citation = Citation.new(params[:citation_text])
+  puts "citation object created"
+  citation.fetch
+  puts "data fetched"
+  base = params[:open_url_base]
+  full_url = "http://#{base}/?query=#{citation.open_url_query}"
+  redirect full_url
 end

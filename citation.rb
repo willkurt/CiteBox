@@ -18,6 +18,8 @@ class Citation
   def fetch 
     post_path = '/citations/create'
     citation_arg = "citation=#{@citation}"
+    puts "starting fetch #{@freecite_url}"
+    puts "citation arg: #{citation_arg}"
     Net::HTTP.start(@freecite_url) do |http|
       response = http.post(post_path,citation_arg,
                       'Accept' => 'application/json')
