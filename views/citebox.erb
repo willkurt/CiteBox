@@ -4,8 +4,10 @@ CiteBox.urlBase = "<%= @url %>";
 CiteBox.hostName = "<%= @host %>";
 
 CiteBox.attach = function(jqueryEl){
+    var defaultText = 'El Emam, K.; Benlarbi, S.; Goel, N.; Melo, W.; Lounis, H.; Rai, S.N.; , "The optimal class size for object-oriented software," IEEE Transactions on Software Engineering, vol.28, no.5, pp.494-509, May 2002';
     jqueryEl.append(
 		CiteBox.widgetCode());
+    $('#citation_text').val(defaultText);
     $('#citebox_submit').bind('click',function(e){
 	e.preventDefault();
         $("#citebox_widget_form").submit();
@@ -13,7 +15,6 @@ CiteBox.attach = function(jqueryEl){
 
    $('#citebox_clear').bind('click',function(e){
    	e.preventDefault();
-	var defaultText = '';
 	$("#citation_text").val(defaultText);
     });
 }
@@ -23,14 +24,15 @@ CiteBox.attach = function(jqueryEl){
 //use jquery templates, but I don't want to have
 //to include all that code in this widget    
 CiteBox.widgetCode = function(){
-    var code = ["<div id='citebox_widget_main'>",
-		"<form id='citebox_widget_form' method='post' action='http://",
+    var code = ["<div id='citebox_widget_main' class='citebox'>",
+                "<span class='citebox' id='citebox_name'><strong>CiteBox</strong></span>",
+		"<form id='citebox_widget_form' class='citebox'  method='post' action='http://",
 		CiteBox.hostName+"/lookup'>",
 		"<input type='hidden' name='open_url_base'",
 		" value ='"+CiteBox.urlBase+"'  id='open_url_base'/>",
-		"<textarea id='citation_text' name='citation_text' /></form>",
-		"<a id='citebox_submit' href='#'>[submit]</a>",
-		"<a  id='citebox_clear'  href='#'>[clear]</a>"]
+		"<textarea class='citebox' id='citation_text' name='citation_text' /></form>",
+		"<div class='citebox_buttons'><a id='citebox_submit' class='citebox citebox_button' href='#'>find it</a>",
+		"<a  id='citebox_clear' class='citebox citebox_button' href='#'>clear</a></div>"]
     return code.join('\n');
 }
 

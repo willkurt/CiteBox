@@ -20,7 +20,7 @@ class Citation
     citation_arg = "citation=#{@citation}"
     puts "starting fetch #{@freecite_url}"
     puts "citation arg: #{citation_arg}"
-    Net::HTTP.start(@freecite_url) do |http|
+    Net::HTTP.start(@freecite_url,3000) do |http|
       response = http.post(post_path,citation_arg,
                       'Accept' => 'application/json')
       json_result = JSON.parse(response.body)
