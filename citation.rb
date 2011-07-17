@@ -27,7 +27,7 @@ class Citation
   end
 
 #this needs a very serious refactor... barf
-  def open_url_base
+  def open_url_query
     if @citation_json.nil?
       @fetch
     end
