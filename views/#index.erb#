@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>CiteBox Demo</title>
+<link rel="stylesheet" type="text/css" href="/css/citebox.css"></link>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="/citebox/localhost:4567/wx2mz2qh4l.search.serialssolutions.com"></script>
+<script type="text/javascript">
+  $('document').ready(function(){
+      console.log('ready');
+      CiteBox.attach($("#main"));
+  });
+</script>
+</head>
+
+<body>
+<div id='main'>
+
+</div>
+</body>
+
+</html>
