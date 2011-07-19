@@ -8,32 +8,29 @@ class Citation
   
   attr_accessor :citation_json
   
-  def initialize(citation)
+  def initialize(pcitation)
     @freecite_url = 'freecite.library.brown.edu'
-    @citation = citation
+    @parsed_citation = pcitation
     @citation_json = nil
   end
    
   #fetches the parsed citation from freecite
-  def fetch 
-    post_path = '/citations/create'
-    citation_arg = "citation=#{@citation}"
-    puts "starting fetch #{@freecite_url}"
-    puts "citation arg: #{citation_arg}"
-    Net::HTTP.start(@freecite_url,3000) do |http|
-      response = http.post(post_path,citation_arg,
-                      'Accept' => 'application/json')
-      json_result = JSON.parse(response.body)
-      @citation_json = json_result[0]
-    end
-  end
+  # def fetch 
+  #   post_path = '/citations/create'
+  #   citation_arg = "citation=#{@citation}"
+  #   puts "starting fetch #{@freecite_url}"
+  #   puts "citation arg: #{citation_arg}"
+  #   Net::HTTP.start(@freecite_url,3000) do |http|
+  #     response = http.post(post_path,citation_arg,
+  #                     'Accept' => 'application/json')
+  #     json_result = JSON.parse(response.body)
+  #     @citation_json = json_result[0]
+  #   end
+  # end
 
 #this needs a very serious refactor... barf
   def open_url_query
-    if @citation_json.nil?
-      @fetch
-    end
-    fcj = @citation_json
+    fcj = @parsed_citation
     #just to get running faster copying some ugliness
     spage,epage = if not fcj['pages'].nil? then fcj['pages'].split('--') else [nil,nil] end
     args = ["url_ver=Z39.88-2004",  #I think this is just standard

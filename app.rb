@@ -1,7 +1,9 @@
 require 'sinatra'
 require 'erb'
 require 'json'
-require './citation'
+require 'rest_client'
+require 'hpricot'
+#require './citation'
 
 
 get '/' do
@@ -19,11 +21,17 @@ end
 post '/lookup' do
   puts "starting"
   puts "data is #{params[:citation_text]}"
-  citation = Citation.new(params[:citation_text])
-  puts "citation object created"
-  citation.fetch
+  citation_text = params[:citation_text]
+  response = RestClient.post( 'http://freecite.library.brown.edu/citations/create',
+                        { :citation => citation_text})
+  citation_xml = Hpricot(response.to_str)
+  open_url_list = []
+  (citation_xml/'ctx:metadata journal')[0].each_child do |x|
+    open_url_list.push("#{x.name.gsub(':','.')}=#{x.innerHTML}")
+  end
+  open_url_query = open_url_list.join('&')
   puts "data fetched"
   base = params[:open_url_base]
-  full_url = "http://#{base}/?query=#{citation.open_url_query}"
+  full_url = "http://#{base}/?query=#{open_url_query}&url_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8"
   redirect full_url
 end
