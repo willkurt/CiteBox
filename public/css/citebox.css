@@ -1,7 +1,15 @@
 .citebox{
     font: 300 100.01% "Helvetica Neue",Helvetica,"Arial Unicode MS",Arial,sans-serif;
 }
+
+span.citebox{
+    position:relative;
+    top: -2px;
+    left: 3px;
+}
+
 textarea.citebox{
+    padding:4px;
     width:280px;
     height:180px;
     color:#ababab;
@@ -12,7 +20,7 @@ textarea.citebox{
 }
 
 div.citebox_buttons{
-    margin-top:-12px;
+    margin-top:-10px;
 }
 .citebox_button {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );

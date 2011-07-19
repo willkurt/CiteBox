@@ -4,10 +4,17 @@ CiteBox.urlBase = "<%= @url %>";
 CiteBox.hostName = "<%= @host %>";
 
 CiteBox.attach = function(jqueryEl){
-    var defaultText = 'El Emam, K.; Benlarbi, S.; Goel, N.; Melo, W.; Lounis, H.; Rai, S.N.; , "The optimal class size for object-oriented software," IEEE Transactions on Software Engineering, vol.28, no.5, pp.494-509, May 2002';
+    var defaultText = 'Copy & Paste or\nType Your Citation Here';
     jqueryEl.append(
 		CiteBox.widgetCode());
     $('#citation_text').val(defaultText);
+    $('#citation_text').bind('click',function(e){
+        e.preventDefault();
+	if($('#citation_text').val() === defaultText){
+
+	   $('#citation_text').val('');
+	}	
+    });
     $('#citebox_submit').bind('click',function(e){
 	e.preventDefault();
         $("#citebox_widget_form").submit();
