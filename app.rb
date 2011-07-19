@@ -3,8 +3,6 @@ require 'erb'
 require 'json'
 require 'rest_client'
 require 'hpricot'
-#require './citation'
-
 
 get '/' do
   erb :index
@@ -19,8 +17,6 @@ get '/citebox/:host/:url' do
 end
 
 post '/lookup' do
-  puts "starting"
-  puts "data is #{params[:citation_text]}"
   citation_text = params[:citation_text]
   response = RestClient.post( 'http://freecite.library.brown.edu/citations/create',
                         { :citation => citation_text})
@@ -30,8 +26,8 @@ post '/lookup' do
     open_url_list.push("#{x.name.gsub(':','.')}=#{x.innerHTML}")
   end
   open_url_query = open_url_list.join('&')
-  puts "data fetched"
   base = params[:open_url_base]
   full_url = "http://#{base}/?query=#{open_url_query}&url_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8"
+  puts "redircting to.. #{full_url}
   redirect full_url
 end
