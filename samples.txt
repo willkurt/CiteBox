@@ -1,0 +1,46 @@
+--Sample Citations to Try!--
+
+
+"Overconfidence by Bayesian Rational Agents." Management Science 57, no. 5 (2011): 884-896
+
+“Disagreement and the Allocation of Control.” The Journal of Law, Economics, and Organization 26, no. 2 (2010): 385-426
+
+Au, Ka-Neng, and Natalie Borisovets. "The Changing LANdscape of Undergraduate Research: The Rutgers-Newark Experience." In Public Access CD-ROMs in Libraries: Case Studies. Edited by Linda Stewart, Katherine Chiang, and Bill Coons. Westport, CT: Meckler, 1990, pp. 217-33.
+
+ Chaplin, T.M., Gillham, J.E., Reivich, K., Levy-Elkton, A., Samuels, B., Freres, D.R., Winder, B. & Seligman, M.E.P. (2006). Depression prevention for early adolescent girls: A pilot study of all-girls versus co-ed groups. Journal of Early Adolescence, 26(1), 110-126.
+
+Duckworth, A.L. & Seligman, M.E.P. (2006). Self-discipline gives girls the edge: Gender in self-discipline, grades, and achievement test scores. Journal of Educational Psychology, 98(1), 198-208.
+
+Abela, J. R. Z., Brozina, K., & Seligman, M. E. P. (2004). A test of the integration of the activation hypothesis and the diathesis-stress component of the hopelessness theory of depression. British Journal of Clinical Psychology, 43, 111-128.
+
+Angeloni, N. L.; Bond, C. W.; Tang, Y.; Harrington, D. A.; Zhang, S.; Stupp, S. I.; McKenna, K. E.; Podlasek, C. A. “Regeneration of the Cavernous Nerve by Sonic Hedgehog Using Aligned Peptide Amphiphile Nanofibers” Biomaterials 32(4), (2011) 1091-1101.
+
+Hulvat, J. F. and S. I. Stupp; “Liquid-crystal templating of conducting polymers.” Angew. Chem.-Int. Edit. 42, (2003) 778-781.
+
+Lecommandoux, S., H. A. Klok, M. Sayar and S. I. Stupp; “Synthesis and self-organization of rod-dendron and dendron-rod-dendron molecules.” J. Polym. Sci. Pol. Chem. 41, (2003) 3501-3518.
+
+Nachit, N.M., M.E. Sorrells, R.W. Zobel, H.G. Gauch, R.A. Fischer, and W.R. Coffman. 1992a. Association of morpho-physiological traits with grain yield and components of genotype-environment interaction in durum wheat. I. J. Genet. & Breed. 46:363-368.
+
+Röder, M. S., J. Plaschke, S. U. König, A. Böner, M. E. Sorrells, S. D. Tanksley, and M.W. Ganal. 1995. Abundance, variability, and chromosomal location of microsatellites in wheat. Mol. Gen. Genet. 246:327-333.
+
+Autrique, E., P. Monnevaux, M. Nachit, and M.E. Sorrells. 1996. Genetic diversity in durum wheat based on RFLPs, morphophysiological traits and coefficient of parentage. Crop Sci. 36:735-742.
+
+L. Randall, V. Sanz, M. D. Schwartz, "Entropy-Area Relations in Field Theory", JHEP 0206 008 (2002) 
+
+M. Dine, L. Randall, and S. Thomas, "Supersymmetry Breaking in the Early Universe", Phys. Rev. Lett. 75, 398-401 (1995)
+
+L. Randall and N. Rius, "The Minimal U (1)R-Symmetric Model Revisited," Phys. Lett. B 286, 299-306 (1992)
+
+Animating pictures with stochastic motion textures, with Y.-Y. Chuang, D. B Goldman, K. C. Zheng, B. Curless, and R. Szeliski. ACM Transactions on Graphics 24(3): 853-860, 2005.
+
+Stylized vector art from 3D models with region support, with E. Eisemann, H. Winnemöller, and J.C. Hart. Computer Graphics Forum 27(4): 1199-1207, 2008. Presented at the Eurographics Symposium on Rendering (Sarajevo), 2008.
+
+Roger V Hoang, Matthew R Sgambati, Timothy J Brown, Daniel S Coming, Frederick C Harris, Jr. 
+VFire: Immersive Wildfire Simulation and Visualization (pdf) (1,067 K)
+Computers and Graphics 
+Special Issue on Serious Games, December 2010, Vol 34, No 6, pages 655-664.
+
+Frederick C. Harris, Jr.,
+A Stochastic Optimization Algorithm for Steiner Minimal Trees, (pdf) (197K) 
+Congr. Numer.,
+Vol. 105 (1994), pp. 54-64.

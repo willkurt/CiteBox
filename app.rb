@@ -5,6 +5,7 @@ require 'rest_client'
 require 'hpricot'
 
 get '/' do
+  puts settings
   erb :index
 end
 
