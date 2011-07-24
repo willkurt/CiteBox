@@ -27,7 +27,19 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+   
+    .citation {color: #333; margin-left: 10px;}
   </style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" 
+      href="http://cite-box.heroku.com/css/citebox.css"></link>
+<script type="text/javascript" src="http://cite-box.heroku.com/citebox/cite-box.heroku.com/wx2mz2qh4l.search.serialssolutions.com"></script>
+<script type="text/javascript">
+  $('document').ready(function(){
+      CiteBox.attach($("#citebox"));
+  });
+</script>
 </head>
 
 <body>
@@ -48,8 +60,38 @@
     <div class="description">
       
     </div>
+<h2>About</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper ipsum et dui tincidunt luctus. Donec et est massa. Nulla lobortis volutpat libero, et euismod lacus aliquam vitae. Fus..
+</p>
 
-    <h2>Authors</h2>
+<h2>Example</h2>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper ipsum et dui tincidunt luctus. Donec et est massa. Nulla lobortis volutpat libero, et euismod lacus aliquam vitae. Fus..
+</p>
+
+<p id="citebox">
+</p>
+
+<h4>Try these sample citations</h4>
+<p class='citation'>"Overconfidence by Bayesian Rational Agents." Management Science 57, no. 5 (2011): 884-896</p>
+<p class='citation'>Angeloni, N. L.; Bond, C. W.; Tang, Y.; Harrington, D. A.; Zhang, S.; Stupp, S. I.; McKenna, K. E.; Podlasek, C. A. “Regeneration of the Cavernous Nerve by Sonic Hedgehog Using Aligned Peptide Amphiphile Nanofibers” Biomaterials 32(4), (2011) 1091-1101.</p>
+<p class='citation'></p>
+
+
+
+
+
+
+<h2>Getting Started...</h2>
+<p>
+I've tried to make getting started with CiteBox as easy as possilbe.  If you decide you want to use CiteBox as a full-time service you should make sure to install your own instance (details on that coming soon). However to get started all you need to do is create a 'div' to hold you CiteBox and replace {my-openurl-base} with the appropriate url. (make sure you are using jquery)
+<pre>
+&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;type=&quot;text/css&quot;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;href=&quot;http://cite-box.heroku.com/css/citebox.css&quot;&gt;&lt;/link&gt;<br/>&lt;script&nbsp;type=&quot;text/javascript&quot;&nbsp;<br/>src=&quot;http://cite-box.heroku.com/citebox/cite-box.heroku.com/{my-open-url-base}&quot;&gt;<br/>&lt;/script&gt;<br/>&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;<br/>&nbsp;&nbsp;$('document').ready(function(){<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CiteBox.attach($(&quot;#my_div&quot;));<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;<br/>
+</pre>
+
+</p>
+    <h2>Author</h2>
 <p>Will Kurt (wckurt@gmail.com)<br/><br/>      </p>
 <h2>Contact</h2>
 <p>Will Kurt (wckurt@gmail.com)<br/>      </p>
