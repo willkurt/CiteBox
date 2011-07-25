@@ -19,14 +19,14 @@ end
 
 post '/lookup' do
   citation_text = params[:citation_text]
-  begin
+#  begin
     response = RestClient.post('http://freecite.library.brown.edu/citations/create',
                           {:citation => citation_text}
                           )
     citation_xml = Hpricot(response.to_str)
-  rescue
-    redirect '/timeout'
-  end
+ # rescue
+  #  redirect '/timeout'
+#  end
   open_url_list = []
   citation_element = (citation_xml/'ctx:metadata journal')[0]
   puts "hi there!"
