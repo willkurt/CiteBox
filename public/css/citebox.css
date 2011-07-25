@@ -20,7 +20,7 @@ textarea.citebox{
 }
 
 div.citebox_buttons{
-    margin-top:6px;
+    margin-top:5px;
 }
 .citebox_button {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
