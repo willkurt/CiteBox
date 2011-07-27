@@ -1,5 +1,3 @@
-NOTICE: Right now CiteBox is entirely dependent on FreeCite, but the FreeCite API has been a little (a lot) wonky over the weekend when this project was made. The FreeCite source is available, so theoretically CiteBox could be made independent of FreeCite... while this a nice goal for now I'm hoping FreeCite starts working better ;)
-
 CiteBox
 -----------------------------
 
